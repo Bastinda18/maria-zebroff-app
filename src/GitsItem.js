@@ -26,7 +26,9 @@ const GitsItem = ({ item }) => {
 			<div className='GitsItem-image-wrapper'>
 				<img src={item.owner.avatar_url} width='70' height='70' alt={item.node_id} />
 			</div>
-			<div className='GitsItem-file'>{firstKeyValue.filename}</div>
+			<div className='GitsItem-file'>
+				{firstKeyValue.filename ? firstKeyValue.filename : 'No files found for this user'}
+			</div>
 			<div
 				className={`float ${fade.fade}`}
 				style={{ top: `${window.innerHeight / 2 + window.scrollY}px`, zIndex: `${zintex}` }}
