@@ -1,0 +1,36 @@
+.GitsItem-wrapper {
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 1rem;
+	border-bottom: 2px solid #ccc;
+	width: 100%;
+}
+.GitsItem-wrapper:hover {
+	background-color: #eee;
+}
+
+.GitsItem-image-wrapper {
+	margin-right: 1rem;
+}
+
+/* Fade in and Fade out */
+
+.float {
+	position: absolute;
+	/* top: 10%; */
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.fade-in {
+	background: white;
+	display: block;
+	transition: opacity 1s ease;
+}
+.fade-out {
+	display: none;
+	opacity: 0;
+	transition: opacity 1s ease;
+}
